@@ -32,3 +32,5 @@ console.log(sum(10, 7));
 
 - **Russian** (Native)
 - **English** (A2)
+
+![Results of English test](img/level_of_english.png)
