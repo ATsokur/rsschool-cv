@@ -5,3 +5,7 @@
 - **E-mail:** flamer723@gmail.com
 - **Discord:** flamer(@ATsokur)
 - **GitHub:** [ATsokur](https://github.com/ATsokur)
+
+## About me:
+
+My path to learning programming started with HTML. For today I know HTML, basics of CSS and little bit JavaScript. Learning to program is hard for me, but it's very interesting. I want to become a Front-end developer.
