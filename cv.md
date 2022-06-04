@@ -20,3 +20,10 @@ function sum(a, b) {
 
 console.log(sum(10, 7));
 ```
+
+## Skills:
+
+- **HTML**
+- **CSS** (basics)
+- **JS** (basics)
+- **GIT**
