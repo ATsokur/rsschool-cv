@@ -27,3 +27,8 @@ console.log(sum(10, 7));
 - **CSS** (basics)
 - **JS** (basics)
 - **GIT**
+
+## Languages:
+
+- **Russian** (Native)
+- **English** (A2)
