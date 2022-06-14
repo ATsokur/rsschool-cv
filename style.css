@@ -21,12 +21,29 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  padding-left: 10px;
+  color: var(--nav-color);
+}
+
+section {
+  width: 975px;
+}
+
 :root {
   --body-bg-color: #141313;
   --header-second-color: #5556589c;
   --header-first-color: #8190a0d0;
   --nav-color: #f0ffda;
   --nav-hover-color: #8924C4;
+  --column-first-color: #c2dde5;
+  --column-second-color: #bdcddd;
+  --h2-bg-color: #109758;
 }
 
 .wrapper {
@@ -62,9 +79,139 @@ ul {
   color: var(--nav-color);
 }
 
-.list__link:hover {
+.list__link:hover,
+.projects__link:hover,
+.link__english:hover,
+.link__github:hover {
   color: var(--nav-hover-color);
   transition: 0.3s;
+}
+
+.main {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__column {
+  width: 350px;
+  background-color: var(--column-first-color);
+}
+
+.my_photo {
+  width: 350px;
+  height: 320px;
+}
+
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+
+.background__line {
+  background-color: var(--h2-bg-color);
+  border-radius: 5px;
+}
+
+.section__about__me,
+.section__example__code {
+  padding-top: 20px;
+}
+
+.about__me__container,
+.example__code__container,
+.code__container,
+.skills__container,
+.languages__container,
+.contacts__container,
+.education__container,
+.projects__container {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.code__container {
+  padding: 40px;
+  width: 300px;
+  background-color: #1b2932;
+}
+
+.code {
+  font-size: 16px;
+  color: #fff;
+}
+
+.func {
+  color: #a67455;
+}
+
+.sum {
+  color: #357585;
+}
+
+.bracket {
+  color: #ddbf20;
+}
+
+.plus {
+  color: #be8497;
+}
+
+.console {
+  color: #bda076;
+}
+
+.dot {
+  color: #c28ba0;
+}
+
+.bracket_ {
+  color: #b862b1;
+}
+
+.num {
+  color: #5c5d94;
+}
+
+.list__skills,
+.list__languages,
+.list__contacts {
+  list-style: circle;
+  padding-left: 18px;
+  font-weight: bold;
+}
+
+.span__skills,
+.span__languages,
+.span__contacts,
+.link__github {
+  font-weight: normal;
+}
+
+.list__education {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 0 17px;
+}
+
+.list__item__education.education__year {
+  margin-right: 10px;
+}
+
+.list__item__education+.list__item__education {
+  margin-right: 10px;
+}
+
+.section__contacts {
+  width: inherit;
+  padding-top: 25px;
 }
 
 .footer {
