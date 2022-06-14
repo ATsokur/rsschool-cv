@@ -1,7 +1,297 @@
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: var(--body-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
 h1 {
-  color: orange;
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  padding-left: 10px;
+  color: var(--nav-color);
+}
+
+section {
+  width: 975px;
+}
+
+:root {
+  --body-bg-color: #141313;
+  --header-second-color: #5556589c;
+  --header-first-color: #8190a0d0;
+  --nav-color: #f0ffda;
+  --nav-hover-color: #8924C4;
+  --column-first-color: #c2dde5;
+  --column-second-color: #bdcddd;
+  --h2-bg-color: #109758;
+}
+
+.wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--column-second-color);
+}
+
+.header {
+  height: 60px;
+  background: linear-gradient(to left, var(--header-second-color), var(--header-first-color));
+}
+
+.nav__list {
+  padding-top: 20px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.list__item {
+  font: bold 14px Arial, sans-serif;
+}
+
+.list__link {
+  padding: 22px 0;
+  color: var(--nav-color);
+}
+
+.list__link:hover,
+.projects__link:hover,
+.link__english:hover,
+.link__github:hover {
+  color: var(--nav-hover-color);
+  transition: 0.3s;
+}
+
+.main {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__column {
+  width: 350px;
+  background-color: var(--column-first-color);
+}
+
+.my_photo {
+  width: 350px;
+  height: 320px;
+}
+
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+
+.background__line {
+  background-color: var(--h2-bg-color);
+  border-radius: 5px;
+}
+
+.section__about__me,
+.section__example__code {
+  padding-top: 20px;
+}
+
+.about__me__container,
+.example__code__container,
+.code__container,
+.skills__container,
+.languages__container,
+.contacts__container,
+.education__container,
+.projects__container {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.code__container {
+  padding: 40px;
+  width: 300px;
+  background-color: #1b2932;
+}
+
+.code {
+  font-size: 16px;
+  color: #fff;
+}
+
+.func {
+  color: #a67455;
+}
+
+.sum {
+  color: #357585;
+}
+
+.bracket {
+  color: #ddbf20;
+}
+
+.plus {
+  color: #be8497;
+}
+
+.console {
+  color: #bda076;
+}
+
+.dot {
+  color: #c28ba0;
+}
+
+.bracket_ {
+  color: #b862b1;
+}
+
+.num {
+  color: #5c5d94;
+}
+
+.list__skills,
+.list__languages,
+.list__contacts {
+  list-style: circle;
+  padding-left: 18px;
+  font-weight: bold;
+}
+
+.span__skills,
+.span__languages,
+.span__contacts,
+.link__github {
+  font-weight: normal;
+}
+
+.list__education {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 0 17px;
+}
+
+.list__item__education.education__year {
+  margin-right: 10px;
+}
+
+.list__item__education+.list__item__education {
+  margin-right: 10px;
+}
+
+.section__contacts {
+  width: inherit;
+  padding-top: 25px;
+}
+
+.footer {
+  height: 60px;
+  margin-top: auto;
+  background: linear-gradient(to left, var(--header-second-color), var(--header-first-color));
+}
+
+.rsschool {
+  min-width: 50px;
+  filter: invert(88%) sepia(56%) saturate(155%) hue-rotate(35deg) brightness(104%) contrast(105%);
+}
+
+.rsschool:hover {
+  filter: invert(17%) sepia(86%) saturate(3379%) hue-rotate(272deg) brightness(90%) contrast(95%);
+}
+
+.copyright {
+  color: var(--nav-color);
+}
+
+@media(max-width: 1210px) {
+  .main__column {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .my_photo {
+    height: 320px;
+  }
+
+}
+
+@media(max-width: 856px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media(max-width: 740px) {
+
+  .section__education,
+  .section__languages,
+  .section__projects,
+  .section__skills,
+  .section__example__code,
+  .section__about__me {
+    width: 100%;
+  }
+
+  .list__education {
+    display: block;
+  }
+
+  .list__item__education {
+    padding-bottom: 10px;
+  }
+
+  .code__container {
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+
+@media(max-width: 550px) {
+  .list__item {
+    margin-right: 5px;
+  }
+
+  .code {
+    font-size: 12px;
+    padding: 0;
+  }
 }

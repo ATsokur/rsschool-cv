@@ -1,13 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello, world!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../rsschool-cv/assets/img/AT.ico" />
+    <title>CV</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+      <header class="header">
+        <nav class="navigation">
+          <ul class="nav__list">
+            <li class="list__item">
+              <a class="list__link" href="#contacts">Contacts</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#aboutMe">About me</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#exampleCode">Example of code</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#skills">Skills</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#projects">Projects</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#education">Education</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#languages">Languages</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--Main content-->
+      <main class="main">
+        <!--My photo and contacts-->
+        <div class="main__column">
+          <div class="my__photo">
+            <img
+              class="my_photo"
+              src="../rsschool-cv/assets/img/photo.jpg"
+              alt="Anton Tsokur"
+            />
+          </div>
+          <section class="section__contacts">
+            <div class="contacts__container">
+              <div class="background__line">
+                <h2 id="contacts">Contacts</h2>
+              </div>
+              <ul class="list__contacts">
+                <li class="list__item__contacts">
+                  E-mail:
+                  <span class="span__contacts">flamer723@gmail.com</span>
+                </li>
+                <li class="list__item__contacts">
+                  Discord: <span class="span__contacts">flamer(@ATsokur)</span>
+                </li>
+                <li class="list__item__contacts">
+                  GitHub:
+                  <a class="link__github" href="https://github.com/ATsokur"
+                    >ATsokur</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <!--About me-->
+        <div class="container">
+          <section class="section__about__me">
+            <div class="about__me__container">
+              <h1>Anton Tsokur</h1>
+              <div class="background__line">
+                <h2 id="aboutMe">About me</h2>
+              </div>
+              <p>
+                My path to learning programming started with HTML. For today I
+                know HTML, basics of CSS and little bit JavaScript. Learning to
+                program is hard for me, but it's very interesting. I want to
+                become a Front-end developer.
+              </p>
+            </div>
+          </section>
+          <!--Example of code-->
+          <section class="section__example__code">
+            <div class="example__code__container">
+              <div class="background__line">
+                <h2 id="exampleCode">Example of code</h2>
+              </div>
+              <div class="code__container">
+                <code class="code">
+                  <span class="func">function</span> <span class="sum">sum</span
+                  ><span class="bracket">(a</span>,
+                  <span class="bracket">b) {</span>
+                  <span class="plus">&nbsp;&nbsp;return</span>
+                  <span class="console">a</span> <span class="plus">+</span>
+                  <span class="console">b</span>; <br />
+                  <span class="bracket">}</span> <br />
+                  <br />
+                  <span class="console">console</span><span class="dot">.</span
+                  ><span class="sum">log</span><span class="bracket">(</span
+                  ><span class="sum">sum</span><span class="bracket_">(</span
+                  ><span class="num">10</span>, <span class="num">7</span
+                  ><span class="bracket_">)</span
+                  ><span class="bracket">)</span>;
+                </code>
+              </div>
+            </div>
+          </section>
+          <!--Skills-->
+          <section class="section__skills">
+            <div class="skills__container">
+              <div class="background__line">
+                <h2 id="skills">Skills</h2>
+              </div>
+              <ul class="list__skills">
+                <li class="list__item__skills">HTML</li>
+                <li class="list__item__skills">
+                  CSS <span class="span__skills">(basic)</span>
+                </li>
+                <li class="list__item__skills">
+                  JS <span class="span__skills">(basic)</span>
+                </li>
+                <li class="list__item__skills">GIT</li>
+              </ul>
+            </div>
+          </section>
+          <!--Projects-->
+          <section class="section__projects">
+            <div class="projects__container">
+              <div class="background__line">
+                <h2 id="projects">Projects</h2>
+              </div>
+              <ul class="list__skills">
+                <li class="list__item__skills">
+                  <a
+                    class="projects__link"
+                    href="https://github.com/ATsokur/rsschool-cv/tree/gh-pages"
+                    target="_blank"
+                    >CV</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--Education-->
+          <section class="section__education">
+            <div class="education__container">
+              <div class="background__line">
+                <h2 id="education">Education</h2>
+              </div>
+              <ul class="list__education">
+                <li class="list__item__education education__year">
+                  2013 - 2017
+                </li>
+                <li class="list__item__education">
+                  Operation of transport and technological machines and
+                  complexes
+                </li>
+                <li class="list__item__education">
+                  Kuban State Technological University
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--Languages-->
+          <section class="section__languages">
+            <div class="languages__container">
+              <div class="background__line">
+                <h2 id="languages">Languages</h2>
+              </div>
+              <ul class="list__languages">
+                <li class="list__item__languages">
+                  Russian <span class="span__languages">(Native)</span>
+                </li>
+                <li class="list__item__languages">
+                  <a
+                    class="link__english"
+                    href="../rsschool-cv/assets/img/level_of_english.png"
+                    target="_blank"
+                  >
+                    English <span class="span__languages">(A2)</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!--Footer-->
+      <footer class="footer">
+        <nav class="footer__inner">
+          <ul class="nav__list">
+            <li class="list__item">
+              <a
+                class="list__link"
+                href="https://github.com/ATsokur"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li class="list__item">
+              <span class="copyright">&copy; 2022 by Anton Tsokur</span>
+            </li>
+            <li class="list__item">
+              <a class="rs__school" href="https://rs.school/js/" target="_blank"
+                ><img
+                  src="../rsschool-cv/assets/img/rs_school_js.svg"
+                  alt="rsschool"
+                  class="rsschool"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
 </html>
