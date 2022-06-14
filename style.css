@@ -66,3 +66,22 @@ ul {
   color: var(--nav-hover-color);
   transition: 0.3s;
 }
+
+.footer {
+  height: 60px;
+  margin-top: auto;
+  background: linear-gradient(to left, var(--header-second-color), var(--header-first-color));
+}
+
+.rsschool {
+  min-width: 50px;
+  filter: invert(88%) sepia(56%) saturate(155%) hue-rotate(35deg) brightness(104%) contrast(105%);
+}
+
+.rsschool:hover {
+  filter: invert(17%) sepia(86%) saturate(3379%) hue-rotate(272deg) brightness(90%) contrast(95%);
+}
+
+.copyright {
+  color: var(--nav-color);
+}
